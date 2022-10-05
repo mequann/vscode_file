@@ -1,11 +1,12 @@
 :root {
-  --color-primary: #2584ff;
+  --color-primary: #4582a0;
   --color-secondary: #00d9ff;
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
   --color-border: #ccc;
   --border-radius :50px;
+  --color--body-darker:#5c5577;
 }
 *,*::after ,* ::before{
     box-sizing: border-box;
@@ -242,4 +243,53 @@ a {
 .input-group .btn{
   margin: 4px;
 }
-
+/*media*/
+.media{
+  display: flex;
+}
+.media_body{
+  padding: 0 2rem;
+  color: var(--color-body);
+}
+.media_title{
+  margin-top: 0;
+}
+.media_image{
+margin-top: 1rem;
+}
+/*quotes*/
+.quote{
+  font-style: italic;
+  color: var(--color--body-darker);
+  font-size: 3rem;
+  line-height: 3rem;
+}
+.quote__text::before{
+  content: open-quote;
+}
+.quote__text::after{
+  content: close-quote;
+}
+.quote__author{
+  font-size: 3rem;
+  font-style: normal;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.quote__company{
+  font-size: 2rem;
+  font-style: normal;
+  opacity: 0.4;
+}
+.quote__line{
+  position: relative;
+  bottom: 10px;
+  margin-left: 2rem;
+}
+@media screen and(min-width:1024px){
+  .quote{
+    font-size: 2rem;
+  }
+  .quote__author{font-size: 2.4rem;}
+  .quote__company{font-size: 1.6rem;}
+}

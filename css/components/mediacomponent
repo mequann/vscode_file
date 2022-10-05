@@ -1,0 +1,12 @@
+<div class="media">
+        <div class="media_image">
+                <svg class="icon icon--primary">
+                    <use xlink:href="css/images/sprite.svg#snap"></use>
+                  </svg>
+             
+        </div>
+        <div class="media_body">
+            <h3 class="media_title">easy startup and managed updates</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint libero dolorem iusto impedit tempore repellat consectetur officia, quia maxime nobis cumque! Blanditiis maiores delectus sint illo labore cumque similique amet.</p>
+        </div>
+    </div>
