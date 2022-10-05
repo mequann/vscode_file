@@ -4,6 +4,8 @@
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
+  --color-border: #ccc;
+  --border-radius :50px;
 }
 *,*::after ,* ::before{
     box-sizing: border-box;
@@ -185,6 +187,16 @@ a {
     background: #ff3400;
     cursor: pointer;
 }
+.btn--secondary{
+  background: var(--color-secondary);
+  color: #fff;
+  border: 0;
+  width: 10rem;
+  height: 6rem;
+}
+.btn--secondary:active{
+  color: rgb(221, 170, 170);
+}
 .btn--accent{
     background: var(--color-accent);
     color: #fff;
@@ -205,15 +217,29 @@ a {
 }
 /*inputs*/
 .input{
-  padding: 1.5rem 3rem;
-  border: 1px solid #ccc;
-  border-radius: 30px;
+  padding: 1.5rem 3.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
   outline: 0;
   font-size: 2rem;
   color: var(--color-headings);
+  
 }
 ::placeholder{
   color: #cdbfcd;
 
 
 }
+.input-group{
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  display: flex;
+}
+.input-group .input{
+  border: 0;
+  flex-grow: 1;
+}
+.input-group .btn{
+  margin: 4px;
+}
+
