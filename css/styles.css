@@ -1,5 +1,5 @@
 :root {
-  --color-primary: #4582a0;
+  --color-primary: #0000ff;
   --color-secondary: #00d9ff;
   --color-accent: #ff3400;
   --color-headings: #1b0760;
@@ -203,11 +203,18 @@ a {
   background: var(--color-secondary);
   color: #fff;
   border: 0;
-  width: 10rem;
-  height: 6rem;
+  width: 20rem;
+  height: 8rem;
+  padding-top: 2rem;
+  
 }
 .btn--secondary:active{
   color: rgb(221, 170, 170);
+  
+}
+.btn__strech{
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 .btn--accent{
     background: var(--color-accent);
@@ -350,5 +357,35 @@ img{
   }
   .testimonial.quote{
     margin-left: 4rem;
+  }
+}
+/*callouts*/
+.callout{
+  padding: 4rem;
+  border-radius: 5px;
+}
+.callout--primary{
+  background: var(--color-primary);
+  color: #fff;
+}
+.callout__heading{
+  color: #fff;
+  margin-top: 0;
+  font-size: 3rem;
+}
+.callout.btn{
+  align-self: center;
+  justify-self: center;
+}
+@media screen and(min-width:768px){
+  .grid--1x2{
+grid-template-columns: 1fr,auto;
+  }
+  .callout.btn{
+    justify-self: start;
+    margin: 0 2rem;
+  }
+  .callout__content{
+    text-align: left;
   }
 }
